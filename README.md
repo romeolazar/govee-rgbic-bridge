@@ -104,6 +104,19 @@ GOVEE_IP=192.168.1.50 python3 govee_bridge.py
 python3 -m unittest discover -s tests -v
 ```
 
+## Roadmap
+
+A future release may add an optional web interface for:
+
+- Configuring the Govee device, UDP listener, segment count, and orientation
+- Tuning brightness attack, release, color smoothing, and frame rate
+- Running solid-color, per-bar, per-segment, brightness, and police-light tests
+- Displaying live bridge status and received-frame diagnostics
+- Importing and exporting configuration for Docker deployments
+
+The web interface should remain local-network only and require no cloud
+account or embedded credentials.
+
 ## Security
 
 The bridge requires no cloud credentials. Keep the UDP listener on a trusted
